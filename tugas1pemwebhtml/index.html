@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+NAMA : FAUZAN HARI RAMDANI
+NIM : F1D02410047
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS PEMWEB FAUZAN</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f4f6f9;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+
+      header h1 {
+        letter-spacing: 2px;
+      }
+
+      nav {
+        background: #34495e;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #f1c40f;
+      }
+
+      main {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+      }
+
+      section {
+        background: white;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      section#aboutme {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      h2,
+      h3 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+
+      img {
+        margin-top: 15px;
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      table th {
+        background: #2c3e50;
+        color: white;
+        padding: 10px;
+      }
+
+      table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+      table tr:nth-child(even) {
+        background: #f2f2f2;
+      }
+
+      form {
+        margin-top: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background: #2c3e50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background: #f1c40f;
+        color: black;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        background: #2c3e50;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#aboutme">Tentang saya</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#certification">Sertifikat</a></li>
+        <li><a href="#contactme">Hubungi saya</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="aboutme">
+        <img src="myfoto.jpeg" alt="Fauzan photo's" width="120px" />
+        <h2>Fauzan's Portfolio</h2>
+        <h3>Informatics engineering | University of Mataram</h3>
+        <p>
+          Saya adalah mahasiswa <em>Teknik Informatika</em> yang suka
+          <strong>belajar hal baru</strong>
+          dan mengeksplorasi <u>teknologi digital</u>. Selain dunia teknologi,
+          saya juga menyukai perjalanan ke <mark> gunung</mark>,
+          <mark> pantai</mark>, dan tempat-tempat alam lainnya.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h3>My experience</h3>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>Kegiatan</th>
+            <th>Waktu</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>PKM-PM</td>
+            <td>OKTOBER 2024</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>LOMBA DESAIN APLIKASI</td>
+            <td>JUNI 2025</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>PANITIA DIVISI ACARA KONGRES</td>
+            <td>JANUARI 2026</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="certification">
+        <h3>Sertifikat saya :</h3>
+        <img src="sertifmtqm.png" alt="sertif mtqmn nasional" width="345" />
+        <img src="sertifmtqunrm.png" alt="sertif mtqmn unram " width="345" />
+        <img src="divisiacara.png" alt="sertif panitia" width="345" />
+      </section>
+
+      <section id="contactme">
+        <h3>Hubungi saya</h3>
+
+        <form>
+          <label>Nama :</label>
+          <input type="text" name="nama" placeholder="masukkan nama" />
+
+          <label>Email :</label>
+          <input type="email" name="email" placeholder="masukkan email" />
+
+          <label>Kota :</label>
+          <select name="kota">
+            <option value="">==Pilih Kota==</option>
+            <option value="Mataram">Mataram</option>
+            <option value="Lombok Barat">Lombok Barat</option>
+            <option value="Lombok Tengah">Lombok Barat</option>
+          </select>
+
+          <label>Pesan :</label>
+          <textarea name="pesan" rows="4"></textarea>
+
+          <input type="submit" value="kirim" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 Fauzan Hari Ramdani</p>
+    </footer>
+  </body>
+</html>
